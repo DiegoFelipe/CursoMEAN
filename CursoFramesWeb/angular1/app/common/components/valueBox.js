@@ -9,7 +9,7 @@ angular.module('primeiraApp').component('valueBox', {
   controller: [
     'gridSystem',
     function(gridSystem) {
-      this.$onInit = () => this.gridClasses = gridSystem.toCssClasses("4")
+      this.$onInit = () => this.gridClasses = gridSystem.toCssClasses(this.grid)
     }
   ],
   template: `
